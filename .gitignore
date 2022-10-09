@@ -1,0 +1,5 @@
+site/
+.venv/
+overrides/
+.obsidian/
+.DS_Store

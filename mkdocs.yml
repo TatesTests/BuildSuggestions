@@ -1,0 +1,40 @@
+site_name: Documentation
+
+theme:
+  name: material
+  logo: assets/gitstream-w.webp
+  # When the user first visits your site, the media queries are evaluated in the order 
+  # of their definition. The first media query that matches selects the default color palette.
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+      - header.autohide
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+extra:
+  analytics:
+    provider: google
+    property: !ENV ANALYTICS_TAG
