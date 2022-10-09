@@ -18,23 +18,3 @@ theme:
         name: Switch to light mode
   features:
       - header.autohide
-extra_css:
-  - stylesheets/extra.css
-plugins:
-  - search
-markdown_extensions:
-  - admonition
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.tabbed:
-      alternate_style: true 
-extra:
-  analytics:
-    provider: google
-    property: !ENV ANALYTICS_TAG
